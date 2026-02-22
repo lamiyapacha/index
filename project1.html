@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tasty Dessert Recipes</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #ff7f7f;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .recipe-card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .recipe-card img {
+            width: 250px;
+            border-radius: 6px;
+        }
+
+        .recipe-content {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .recipe-text {
+            text-align: left;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #ff7f7f;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #e06666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #222;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .recipe-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .recipe-text {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍰 Tasty Dessert Recipes</h1>
+    <p>Explore delicious sweets from around the world</p>
+</header>
+
+<nav>
+    <a href="#tiramisu">Tiramisu</a>
+    <a href="#strawberry">Strawberry Shortcake</a>
+    <a href="#rasmalai">Rasmalai</a>
+</nav>
+
+<div class="container">
+
+    <!-- Tiramisu -->
+    <div class="recipe-card" id="tiramisu">
+        <h2>Tiramisu</h2>
+        <div class="recipe-content">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.vxPYzUWCVWv3P6xJ68bYBQHaE8?rs=1&pid=ImgDetMain">
+            <div class="recipe-text">
+                <p>Tiramisu is a famous Italian dessert made with layers of coffee-soaked ladyfingers and creamy mascarpone mixture.</p>
+
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>Mascarpone cheese</li>
+                    <li>Eggs</li>
+                    <li>Ladyfingers</li>
+                    <li>Coffee</li>
+                    <li>Cocoa powder</li>
+                </ul>
+
+                <a class="btn" href="https://www.recipesfromitaly.com/tiramisu-original-italian-recipe/" target="_blank">
+                    View Full Recipe
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Strawberry -->
+    <div class="recipe-card" id="strawberry">
+        <h2>Strawberry Shortcake</h2>
+        <div class="recipe-content">
+            <img src="https://celebratingsweets.com/wp-content/uploads/2018/06/Strawberry-Shortcake-Cake-1-1.jpg">
+            <div class="recipe-text">
+                <p>This classic dessert combines soft cake layers, fresh strawberries and whipped cream.</p>
+
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>Flour</li>
+                    <li>Sugar</li>
+                    <li>Strawberries</li>
+                    <li>Whipped cream</li>
+                    <li>Butter</li>
+                </ul>
+
+                <a class="btn" href="https://www.allrecipes.com/recipe/8201/strawberry-shortcake/" target="_blank">
+                    View Full Recipe
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rasmalai -->
+    <div class="recipe-card" id="rasmalai">
+        <h2>Rasmalai</h2>
+        <div class="recipe-content">
+            <img src="https://www.palatesdesire.com/wp-content/uploads/2022/09/Rasmalai-recipe@palates-desire.jpg">
+            <div class="recipe-text">
+                <p>Rasmalai is a popular Indian sweet made from soft paneer balls soaked in flavored sweet milk.</p>
+
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>Milk</li>
+                    <li>Sugar</li>
+                    <li>Paneer</li>
+                    <li>Cardamom</li>
+                    <li>Saffron</li>
+                </ul>
+
+                <a class="btn" href="https://www.vegrecipesofindia.com/rasmalai-recipe/" target="_blank">
+                    View Full Recipe
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Dessert Recipes 
+</footer>
+
+</body>
+</html>
